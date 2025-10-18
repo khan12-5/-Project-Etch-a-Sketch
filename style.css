@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column; /* button upar aur grid neeche rahegi */
+  align-items: center;    /* horizontally center */
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +13,26 @@
   border: 2px solid black;
     justify-content: center;
 }
+.btn {
+  padding: 12px 24px;
+  margin: 30px;
+  background-color: #4f46e5; /* nice indigo color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4338ca; /* darker shade on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
 .container>div:nth-child(16n + 1) {
   width: 100%;
   border: 0;
